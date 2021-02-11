@@ -25,21 +25,21 @@ export const Nav = () => {
     </HStack>
   )
 }
-const NavLink = ({ href, children }) => (
-  <NextLink href={href} passHref>
-    <Link
-      px={3}
-      py={2}
-      borderRadius="lg"
-      fontWeight="medium"
-      color="gray.700"
-      textDecor="none"
-      _hover={{
-        textDecor: "none",
-        bg: "gray.50",
-      }}
-    >
-      {children}
-    </Link>
-  </NextLink>
-)
+// const NavLink = ({ href, children }) => (
+//   <NextLink href={href} passHref>
+//     <Link
+//       px={3}
+//       py={2}
+//       borderRadius="lg"
+//       fontWeight="medium"
+//       color="gray.700"
+//       textDecor="none"
+//       _hover={{
+//         textDecor: "none",
+//         bg: "gray.50",
+//       }}
+//     >
+//       {children}
+//     </Link>
+//   </NextLink>
+// )
