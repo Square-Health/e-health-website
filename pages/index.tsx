@@ -31,10 +31,7 @@ export default function Home() {
         {/* <meta property="og:site_name" content="Square Health" /> */}
         <meta property="og:title" content="eHealth Africa" />
         <meta property="og:url" content="https://e-health.africa" />
-        <meta
-          name="google-site-verification"
-          content="gtkVpvjbkGRiv6GTs5ptKfK_DYBGKcfa9exn8cuEa60"
-        />
+        <meta name="google-site-verification" content="FRN4CNOal_5H607h5ZQVGOQLzBodrKU8Wqx_BmVSklw" />
       </Head>
       <SimpleLayout>
         <Nav />
