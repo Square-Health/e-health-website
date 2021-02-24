@@ -2,16 +2,16 @@ import Head from "next/head"
 import {
   Image,
   Heading,
-  Icon,
   Text,
   Flex,
-  Stack,
   HStack,
   Link,
-  SimpleGrid,
+  Stack,
 } from "@chakra-ui/react"
 import { Nav, SimpleLayout } from "components"
-import { FiArrowRight } from "react-icons/fi"
+import CurrentProjects from "components/CurrentProjects"
+import Heroh from "components/Heroh"
+import Square from "components/Square"
 export default function Home() {
   return (
     <>
@@ -31,7 +31,10 @@ export default function Home() {
         {/* <meta property="og:site_name" content="Square Health" /> */}
         <meta property="og:title" content="eHealth Africa" />
         <meta property="og:url" content="https://e-health.africa" />
-        <meta name="google-site-verification" content="FRN4CNOal_5H607h5ZQVGOQLzBodrKU8Wqx_BmVSklw" />
+        <meta
+          name="google-site-verification"
+          content="FRN4CNOal_5H607h5ZQVGOQLzBodrKU8Wqx_BmVSklw"
+        />
       </Head>
       <SimpleLayout>
         <Nav />
@@ -45,10 +48,15 @@ export default function Home() {
             >
               The new standard in eHealth
             </Heading>
-            <Text as='p' mt={5} fontWeight="medium" color="gray.800">
+            {/* <Text as="p" mt={5} fontWeight="medium" color="gray.800">
               In the latter part of 2015 we embarked on a journey into eHealth
               and SaaS, initially specific to occupational health. eHealth
               Africa is the collaborative efforts of those involved.
+            </Text> */}
+            <Text as="p" mt={5} fontWeight="medium" color="gray.800">
+              In the latter part of 2015 we set out to provide an enterprise
+              level Occupational Health suite of tools that any practice or
+              clinic can afford. As we went along, our mission changed.
             </Text>
           </Flex>
           <Flex display={["none", "none", "block"]} flex={2}>
@@ -61,32 +69,14 @@ export default function Home() {
             />
           </Flex>
         </HStack>
-        <Text
-          as='span'
-          mt={16}
-          fontSize="sm"
-          color="gray.700"
-          fontWeight="semibold"
-          textTransform="uppercase"
-          letterSpacing="wide"
-        >
-          Current projects
-        </Text>
-        <SimpleGrid columns={[1, 1, 2]} mt={4} spacing={3}>
-          <Product
-            href="https://square.health"
-            img="/icon.png"
-            title="Square Health"
-            description="A Fresh approach to collaborative healthcare, starting with the individual."
-          />
-          <Product
-            href="https://heroh.africa"
-            img="/tree.png"
-            title="Heroh"
-            description="The best platform for managing the health of your employees."
-          />
-        </SimpleGrid>
-        <Flex as='footer' mt={10}>
+        <CurrentProjects />
+
+        <Stack my={20}>
+          <Heroh />
+          <Square />
+        </Stack>
+
+        <Flex as="footer" mt={10}>
           <Text mr={1}>You can</Text>
           <Link
             fontWeight="medium"
@@ -101,33 +91,38 @@ export default function Home() {
     </>
   )
 }
-const Product = ({ href, title, description, img }) => (
-  <HStack
-    as="a"
-    href={href}
-    cursor="pointer"
-    transition="box-shadow 0.3s ease-in-out"
-    _hover={{
-      boxShadow: "lg",
-    }}
-    px={5}
-    py={5}
-    boxShadow="md"
-    justify="space-between"
-    borderRadius="lg"
-    w="full"
-  >
-    <HStack spacing={4}>
-      <Image width={["60px", "40px"]} src={img} />
-      <Stack spacing={0}>
-        <Text fontSize="lg" fontWeight="semibold">
-          {title}
-        </Text>
-        <Text lineHeight="short" fontSize="sm" color="gray.700">
-          {description}
-        </Text>
-      </Stack>
-    </HStack>
-    <Icon display={["none", "inline"]} as={FiArrowRight} />
-  </HStack>
-)
+
+// const x = () => (
+//   <UnorderedList>
+// <ListItem>
+//   Increase the productive lives of all fellow Africans
+// </ListItem>
+// <ListItem>facilitate economic growth in Africa</ListItem>
+// <ListItem>Identify occupational disease through big data</ListItem>
+// <ListItem>
+//   Enable response by governments, the AU, WHO, ILO and World bank
+// </ListItem>
+// <ListItem>Enforce ethical behaviour by employers</ListItem>
+// <ListItem>
+//   Effect regulations through active participation by governments
+// </ListItem>
+// <ListItem>
+//   Provide access to electronic health records and certificates of
+//   fitness, issued by a certified partner, anywhere in Africa
+// </ListItem>
+// <ListItem>
+//   Create a vehicle to enable Occupational Health in the informal
+//   (mining-) sector
+// </ListItem>
+// <ListItem>
+//   Provide access to electronic health records and certificates of
+//   fitness, issued by a certified partner, anywhere in Africa
+// </ListItem>
+// <ListItem>
+//   Create a framework to address wrongs of the past (retired mineworkers;
+//   refer silicosis & TB)
+// </ListItem>
+// </UnorderedList>
+
+// )
+// const ListItem = ({ children }) => <CListItem fontSize="sm" fontWeight="medium">{children}</CListItem>
