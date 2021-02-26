@@ -71,10 +71,10 @@ export default function Home() {
         </HStack>
         <CurrentProjects />
 
-        <Stack my={20}>
+        {/* <Stack my={20}>
           <Heroh />
           <Square />
-        </Stack>
+        </Stack> */}
 
         <Flex as="footer" mt={10}>
           <Text mr={1}>You can</Text>
