@@ -133,7 +133,7 @@ const CurrentProjects = () => {
           href="https://square.health"
           img="/icon.png"
           title="Square Health"
-          description="A fresh approach collaborative healthcare, starting with the individual."
+          description="A fresh approach to collaborative healthcare, starting with the individual."
         >
           <Stack justify="flex-start" spacing={6}>
             <SquareCard title="eHealth">
@@ -176,7 +176,7 @@ const CurrentProjects = () => {
           sick person after the fact.
         </InfoCard> */}
 
-            <SquareCard title="Extending reach vulnerable communities">
+            <SquareCard title="Extending reach to vulnerable communities">
               A designated community carer performing participative care
               peer-assessments should be alerted issue TB or other medication,
               while being reminded what peer-assessments perform, for whom, when
