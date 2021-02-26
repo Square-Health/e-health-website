@@ -82,7 +82,7 @@ export default function Home() {
           >
             contact us
           </Link>
-          <Text ml={1}>if you have any inquiries.</Text>
+          <Text ml={1}>if you have any enquiries.</Text>
         </Flex>
       </SimpleLayout>
     </>
