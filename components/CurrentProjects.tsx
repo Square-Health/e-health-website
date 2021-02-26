@@ -37,9 +37,9 @@ const CurrentProjects = () => {
               Providing a toolset for Occupational Health practitioners - not
               another practice management solution, but a suite of tools to
               address your needs. And your clients’ needs. So we originally set
-              out provide an enterprise level Occupational Health suite of tools
-              that any practice or clinic can afford. But as we went along, we
-              learnt so much more.
+              out to provide an enterprise level Occupational Health suite of
+              tools that any practice or clinic can afford. But as we went
+              along, we learnt so much more.
             </HerohCard>
 
             <HerohCard title="A captive market in most developing countries">
@@ -47,29 +47,28 @@ const CurrentProjects = () => {
               poorly regulated or not regulated at all. Poor or no regulation
               implies limited Occupational Health services. Limited Occupational
               Health services implies a captive market, or even worse, the
-              promotion of unethical behavior by employers. How address this
+              promotion of unethical behavior by employers. How to address this
               quickly? Heroh provides you as a general practitioner in such
               territories with the tools and Occupational Health framework make
               a difference.
             </HerohCard>
 
             <HerohCard title="Regulations - forever evolving">
-              Whether existing or new, Occupational Health regulations
-              should/must/have evolve. For this happen, data is required.
-              Collective data guides Occupational Health bodies, whether
-              government departments, institutes, service providers or even
-              employers, zoom in on areas of concern and facilitate response.
-              But data captured on paper and collecting dust is of very little
-              use.
+              Whether existing or new, Occupational Health regulations must
+              evolve. For this to happen, data is required. Collective data
+              guides Occupational Health bodies, whether government departments,
+              institutes, service providers or even employers, to zoom in on
+              areas of concern and facilitate response. But data captured on
+              paper and collecting dust is of very little use.
             </HerohCard>
 
             <HerohCard title="Employers’ Covid-19 lesson #1">
-              Occupational Health used be a cost center. Employers worldwide
+              Occupational Health used to be a cost centre. Employers worldwide
               since realised that Occupational Health provides a framework to
               protect its most valuable assets - its employees. They realised
               that Occupational Health safeguards their existence. The increased
               adoption by employers is why it is crucial that Occupational
-              Health service providers must be equipped with the tools work
+              Health service providers must be equipped with the tools to work.
             </HerohCard>
           </Stack>
           {/* <Divider /> */}
@@ -112,17 +111,17 @@ const CurrentProjects = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Provide access electronic health records and certificates of
+                Provide access to electronic health records and certificates of
                 fitness, issued by a certified partner, anywhere in Africa
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Create a vehicle enable Occupational Health in the informal
+                Create a vehicle to enable Occupational Health in the informal
                 (mining-) sector
               </ListItem>
               <ListItem>
                 <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Last, but not least, create a framework address wrongs of the
+                Last, but not least, create a framework to address wrongs of the
                 past (retired mineworkers; refer silicosis & TB)
               </ListItem>
             </List>
@@ -139,9 +138,9 @@ const CurrentProjects = () => {
               Covid-19 emphasised the challenges brought forward by a fragmented
               healthcare industry. The bottom line is individuals’ health data
               is spread amongst a myriad of silos - even paper. In addition,
-              there exists no interoperability between these solutions, while
-              each individual or patient has a right access their health data,
-              which is simply not possible in today’s industry. But it can be.
+              there exists no interoperability between these solutions, and
+              while each individual or patient has a right to their health data,
+              it is simply not possible in today’s industry. But it can be.
             </SquareCard>
 
             <SquareCard title="Participative healthcare">
@@ -150,18 +149,18 @@ const CurrentProjects = () => {
               includes shared decision making. This participative approach does
               not only involve the healthcare provider or doctor or a multiple
               thereof, but also the patient. However, where applicable, a
-              designated proxy should be empowered with capability take
+              designated proxy should be empowered with capability to take
               responsibility for community based care on behalf of its members.
             </SquareCard>
 
             <SquareCard title="Shifting the doctors’ focus">
-              Participative healthcare empowers the individual take
+              Participative healthcare empowers the individual to take
               co-responsibility for triage. This in effect reduces the load on
               the healthcare industry and allows the doctors or healthcare
               workers to only focus on the cases requiring definitive prognosis
               or care. Finally, participative healthcare shifts the doctor’s
-              focus from reactively treating ill patients proactively managing
-              the health of individuals.
+              focus from reactively treating ill patients to proactively
+              managing the health of individuals.
             </SquareCard>
 
             {/* <InfoCard title="Proactive health management">
@@ -177,9 +176,9 @@ const CurrentProjects = () => {
 
             <SquareCard title="Extending reach to vulnerable communities">
               A designated community carer performing participative care
-              peer-assessments should be alerted issue TB or other medication,
-              while being reminded what peer-assessments perform, for whom, when
-              and in the case of medication, what administer.
+              peer-assessments should be alerted to issue TB or other
+              medication, while being reminded what peer-assessments to perform,
+              for whom, when and in the case of medication, what to administer.
             </SquareCard>
           </Stack>
           {/* <Divider /> */}
