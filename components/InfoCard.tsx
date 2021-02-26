@@ -1,4 +1,4 @@
-import { Heading, VStack, Text, Button, Box, Flex } from "@chakra-ui/react"
+import { Heading, VStack, Text, Button, Flex } from "@chakra-ui/react"
 
 const InfoCard = ({ title, children, productName = null }) => (
   <VStack bg="orange.50" p={6} borderRadius="xl" spacing={4}>

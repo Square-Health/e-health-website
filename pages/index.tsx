@@ -6,12 +6,9 @@ import {
   Flex,
   HStack,
   Link,
-  Stack,
 } from "@chakra-ui/react"
 import { Nav, SimpleLayout } from "components"
 import CurrentProjects from "components/CurrentProjects"
-import Heroh from "components/Heroh"
-import Square from "components/Square"
 export default function Home() {
   return (
     <>

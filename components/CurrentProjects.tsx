@@ -5,7 +5,6 @@ import {
   Stack,
   HStack,
   SimpleGrid,
-  Divider,
   List,
   ListItem,
   ListIcon,
