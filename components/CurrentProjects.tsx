@@ -8,10 +8,10 @@ import {
   List,
   ListItem,
   ListIcon,
-} from "@chakra-ui/react"
-import { FiArrowRight } from "react-icons/fi"
-import InfoCard from "./InfoCard"
-import { CheckCircleIcon } from "@chakra-ui/icons"
+} from '@chakra-ui/react'
+import { FiArrowRight } from 'react-icons/fi'
+import InfoCard from './InfoCard'
+import { CheckCircleIcon } from '@chakra-ui/icons'
 
 const HerohCard = ({ title, children }) => (
   <InfoCard title={title} children={children} productName="Heroh" />
@@ -24,14 +24,14 @@ const CurrentProjects = () => {
   return (
     <>
       <Label>Current projects</Label>
-      <SimpleGrid columns={[1, 1, 2]} mt={4} spacing={3}>
+      <SimpleGrid columns={[1, 1, 1]} mt={4} spacing={3}>
         <Product
           href="https://heroh.africa"
           img="/tree.png"
           title="Heroh"
           description="The best platform for managing the health of your employees."
         >
-          <Stack justify="flex-start" spacing={6}>
+          <SimpleGrid justify="flex-start" columns={[1, 1, 1, 2]} spacing={6}>
             <HerohCard title="Your Electronic Health Record">
               Initially we focussed all our energy on Occupational Health:
               Providing a toolset for Occupational Health practitioners - not
@@ -70,7 +70,7 @@ const CurrentProjects = () => {
               adoption by employers is why it is crucial that Occupational
               Health service providers must be equipped with the tools to work.
             </HerohCard>
-          </Stack>
+          </SimpleGrid>
           {/* <Divider /> */}
           <Stack>
             <Text
@@ -127,116 +127,37 @@ const CurrentProjects = () => {
             </List>
           </Stack>
         </Product>
-        <Product
-          href="https://square.health"
-          img="/icon.png"
-          title="Square Health"
-          description="A fresh approach to collaborative healthcare, starting with the individual."
+
+        <Stack
+          transition="box-shadow 0.1s ease-in-out"
+          _hover={{
+            boxShadow: 'lg',
+          }}
+          px={5}
+          py={5}
+          width="full"
+          boxShadow="md"
+          justify="flex-start"
+          borderRadius="lg"
+          w="full"
+          spacing={6}
         >
-          <Stack justify="flex-start" spacing={6}>
-            <SquareCard title="eHealth">
-              Covid-19 emphasised the challenges brought forward by a fragmented
-              healthcare industry. The bottom line is individuals’ health data
-              is spread amongst a myriad of silos - even paper. In addition,
-              there exists no interoperability between these solutions, and
-              while each individual or patient has a right to their health data,
-              it is simply not possible in today’s industry. But it can be.
-            </SquareCard>
-
-            <SquareCard title="Participative healthcare">
-              Participative healthcare defines the shift from a paternalistic
-              industry towards a more inclusive and participative approach which
-              includes shared decision making. This participative approach does
-              not only involve the healthcare provider or doctor or a multiple
-              thereof, but also the patient. However, where applicable, a
-              designated proxy should be empowered with capability to take
-              responsibility for community based care on behalf of its members.
-            </SquareCard>
-
-            <SquareCard title="Shifting the doctors’ focus">
-              Participative healthcare empowers the individual to take
-              co-responsibility for triage. This in effect reduces the load on
-              the healthcare industry and allows the doctors or healthcare
-              workers to only focus on the cases requiring definitive prognosis
-              or care. Finally, participative healthcare shifts the doctor’s
-              focus from reactively treating ill patients to proactively
-              managing the health of individuals.
-            </SquareCard>
-
-            {/* <InfoCard title="Proactive health management">
-          A diabetic performing daily self-assessments, with the
-          collective data over time identifying a trend which triggers a flag
-          with the doctor associated the health record? This would thus
-          result in the doctor proactively managing the case, example calling
-          the patient discuss concerns or requesting the patient visit the
-          practice for a physical examination. The doctor is now proactively
-          manage the patient’s health condition instead of reactively treating a
-          sick person after the fact.
-        </InfoCard> */}
-
-            <SquareCard title="Extending reach to vulnerable communities">
-              A designated community carer performing participative care
-              peer-assessments should be alerted to issue TB or other
-              medication, while being reminded what peer-assessments to perform,
-              for whom, when and in the case of medication, what to administer.
-            </SquareCard>
-          </Stack>
-          {/* <Divider /> */}
-          <Stack pt={10}>
-            <Text
-              fontSize="sm"
-              textAlign="center"
-              textTransform="uppercase"
-              letterSpacing="wide"
-              fontWeight="medium"
-              color="gray.700"
-            >
-              Mission
-            </Text>
-
-            <List mt={4} spacing={2} fontSize="sm">
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Address fragmentation in the healthcare industry
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Broaden triage through participative healthcare
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Shift medical professionals’ focus to proactive management
-                instead of reactive treatment
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Reduce workload in the healthcare industry
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Extend healthcare reach to vulnerable communities
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Enable interoperability amongst solution providers
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Take the 1st steps to a true digital health passport
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Extend capability to address Occupational Health in the informal
-                (mining-) sector
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="orange.400" />
-                Last, but not least, to extend our vehicle to address wrongs of
-                the past (retired mineworkers; refer silicosis & TB)
-              </ListItem>
-            </List>
-          </Stack>
-        </Product>
+          <HStack height="4em" justifyContent="space-between">
+            <HStack spacing={4}>
+              <Image width={['60px', '40px']} src={'/icon.png'} />
+              <Stack spacing={0}>
+                <Text fontSize="lg" fontWeight="semibold">
+                  Square Health
+                </Text>
+                <Text lineHeight="short" fontSize="sm" color="gray.700">
+                  A fresh approach to collaborative healthcare, starting with
+                  the individual, coming soon.
+                </Text>
+              </Stack>
+            </HStack>
+            <Icon display={['none', 'inline']} as={FiArrowRight} />
+          </HStack>
+        </Stack>
       </SimpleGrid>
     </>
   )
@@ -265,19 +186,20 @@ const Product = ({ href, title, description, img, children }) => (
     cursor="pointer"
     transition="box-shadow 0.1s ease-in-out"
     _hover={{
-      boxShadow: "lg",
+      boxShadow: 'lg',
     }}
     px={5}
     py={5}
+    width="full"
     boxShadow="md"
     justify="flex-start"
     borderRadius="lg"
     w="full"
     spacing={6}
   >
-    <HStack height="4em">
+    <HStack height="4em" justifyContent="space-between">
       <HStack spacing={4}>
-        <Image width={["60px", "40px"]} src={img} />
+        <Image width={['60px', '40px']} src={img} />
         <Stack spacing={0}>
           <Text fontSize="lg" fontWeight="semibold">
             {title}
@@ -287,9 +209,124 @@ const Product = ({ href, title, description, img, children }) => (
           </Text>
         </Stack>
       </HStack>
-      <Icon display={["none", "inline"]} as={FiArrowRight} />
+      <Icon display={['none', 'inline']} as={FiArrowRight} />
     </HStack>
     {/* <Divider /> */}
     {children}
   </Stack>
 )
+
+const SH = () => {
+  return (
+    <Product
+      href="https://square.health"
+      img="/icon.png"
+      title="Square Health"
+      description="A fresh approach to collaborative healthcare, starting with the individual."
+    >
+      <Stack justify="flex-start" spacing={6}>
+        <SquareCard title="eHealth">
+          Covid-19 emphasised the challenges brought forward by a fragmented
+          healthcare industry. The bottom line is individuals’ health data is
+          spread amongst a myriad of silos - even paper. In addition, there
+          exists no interoperability between these solutions, and while each
+          individual or patient has a right to their health data, it is simply
+          not possible in today’s industry. But it can be.
+        </SquareCard>
+
+        <SquareCard title="Participative healthcare">
+          Participative healthcare defines the shift from a paternalistic
+          industry towards a more inclusive and participative approach which
+          includes shared decision making. This participative approach does not
+          only involve the healthcare provider or doctor or a multiple thereof,
+          but also the patient. However, where applicable, a designated proxy
+          should be empowered with capability to take responsibility for
+          community based care on behalf of its members.
+        </SquareCard>
+
+        <SquareCard title="Shifting the doctors’ focus">
+          Participative healthcare empowers the individual to take
+          co-responsibility for triage. This in effect reduces the load on the
+          healthcare industry and allows the doctors or healthcare workers to
+          only focus on the cases requiring definitive prognosis or care.
+          Finally, participative healthcare shifts the doctor’s focus from
+          reactively treating ill patients to proactively managing the health of
+          individuals.
+        </SquareCard>
+
+        {/* <InfoCard title="Proactive health management">
+          A diabetic performing daily self-assessments, with the
+          collective data over time identifying a trend which triggers a flag
+          with the doctor associated the health record? This would thus
+          result in the doctor proactively managing the case, example calling
+          the patient discuss concerns or requesting the patient visit the
+          practice for a physical examination. The doctor is now proactively
+          manage the patient’s health condition instead of reactively treating a
+          sick person after the fact.
+        </InfoCard> */}
+
+        <SquareCard title="Extending reach to vulnerable communities">
+          A designated community carer performing participative care
+          peer-assessments should be alerted to issue TB or other medication,
+          while being reminded what peer-assessments to perform, for whom, when
+          and in the case of medication, what to administer.
+        </SquareCard>
+      </Stack>
+      {/* <Divider /> */}
+      <Stack pt={10}>
+        <Text
+          fontSize="sm"
+          textAlign="center"
+          textTransform="uppercase"
+          letterSpacing="wide"
+          fontWeight="medium"
+          color="gray.700"
+        >
+          Mission
+        </Text>
+
+        <List mt={4} spacing={2} fontSize="sm">
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Address fragmentation in the healthcare industry
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Broaden triage through participative healthcare
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Shift medical professionals’ focus to proactive management instead
+            of reactive treatment
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Reduce workload in the healthcare industry
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Extend healthcare reach to vulnerable communities
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Enable interoperability amongst solution providers
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Take the 1st steps to a true digital health passport
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Extend capability to address Occupational Health in the informal
+            (mining-) sector
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="orange.400" />
+            Last, but not least, to extend our vehicle to address wrongs of the
+            past (retired mineworkers; refer silicosis & TB)
+          </ListItem>
+        </List>
+      </Stack>
+    </Product>
+  )
+}
