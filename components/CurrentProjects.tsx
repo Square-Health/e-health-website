@@ -155,7 +155,7 @@ const CurrentProjects = () => {
                 </Text>
               </Stack>
             </HStack>
-            <Icon display={['none', 'inline']} as={FiArrowRight} />
+            {/* <Icon display={['none', 'inline']} as={FiArrowRight} /> */}
           </HStack>
         </Stack>
       </SimpleGrid>
